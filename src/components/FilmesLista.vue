@@ -5,9 +5,7 @@
         <h2>Filmes</h2>
 
         <div class="list-group list-group-flush">
-            <FilmesListaIten filmeTitulo="Vingadores: Guerra infinita" />
-            <FilmesListaIten filmeTitulo="Homem Formiga e a Vespa" />
-            <FilmesListaIten filmeTitulo="Pantera Negra" />
+            <FilmesListaIten v-for="(filme, index) in filmes" :key="index" :filmeTitulo="filme" />
         </div>
     </div>
 
@@ -26,6 +24,16 @@ export default {
     components: {
         FilmesListaIten,
         FilmesListaItenInfo,
+    },
+    data() {
+        return {
+            filmes: [
+                "Vingadores: Guerra Infinita",
+                "Homem Formiga e a Vespa",
+                "Pantera Negra",
+                "Homem Aranha",
+            ],
+        };
     },
 };
 </script>
