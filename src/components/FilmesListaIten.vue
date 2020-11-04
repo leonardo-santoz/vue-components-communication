@@ -13,8 +13,5 @@ export default {
             return `Titulo: ${this.filmeTitulo}`;
         },
     },
-    created() {
-        console.log("Filme titulo: ", this.filmeTitulo);
-    },
 };
 </script>
