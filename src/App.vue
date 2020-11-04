@@ -5,10 +5,10 @@
             <h1 class="display-4">Lista de Filmes</h1>
             <p class="lead">Treinando comunicação entre Components no Vue</p>
         </div>
+    </div>
 
-        <div class="container">
-            <FilmesLista />
-        </div>
+    <div class="container">
+        <FilmesLista />
     </div>
 </div>
 </template>
